@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Spotify</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
 </head>
@@ -135,7 +136,43 @@
     </div>
 
     <footer>
+        <div class="song-panel">
+            <div class="current-song">
+                <div class="name-current-song">
+                    <img src="img/sinister.jpeg" alt="sinister">
+                    <div class="info-current-song">
+                        <p class="clr-white">Sinister</p>
+                        <p class="clr-gray">Brano Nome</p>
+                    </div>
+                </div>
 
+                <div class="icons-current-song">
+                    <i class="fa-regular fa-heart clr-gray"></i>
+                    <i class="fa-regular fa-folder clr-gray"></i>
+                </div>
+            </div>
+
+            <div class="controls-song">
+                <div class="icon-controls">
+                    <i class="fa-solid fa-shuffle clr-white "></i>
+                    <i class="fa-solid fa-backward-step clr-white "></i>
+                    <i class="fa-regular fa-circle-play clr-white "></i>
+                    <i class="fa-solid fa-forward-step clr-white "></i>
+                    <i class="fa-solid fa-arrow-rotate-right clr-white"></i>
+                </div>
+                <div class="minutes-song">
+                    <p class="clr-white">0:25</p>
+                    <div class="tot-minute clr-gray"><div class="current-minute clr-white"></div></div>
+                    <p class="clr-white">4:35</p>
+                </div>
+            </div>
+            <div class="volume-song">
+                <i class="fa-solid fa-list-ul clr-white"></i>
+                <i class="fa-solid fa-desktop clr-white"></i>
+                <i class="fa-solid fa-volume-high clr-white"></i>
+                <div class="tot-volume clr-gray"><div class="current-volume clr-white"></div></div>
+            </div>
+        </div>
     </footer>
 
 </body>

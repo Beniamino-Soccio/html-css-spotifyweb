@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spotify</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
@@ -16,9 +17,9 @@
                 <img src="img/logo.svg" alt="logo" class="logo-big">
                 <img src="img/logo-small.svg" alt="logo-sml" class="logo-sml">
                 <ul>
-                    <li><a href="#"><img src="img/home.svg" alt="home"> Home</a></li>
-                    <li><a href="#"><img src="img/search.svg" alt=""> Cerca</a></li>
-                    <li><a href="#"><img src="img/libreria.svg" alt=""> La tua libreria</a></li>
+                    <li><img src="img/home.svg" alt="home"><a href="#" class="clr-white"> Home</a></li>
+                    <li><img src="img/search.svg" alt=""><a href="#"> Cerca</a></li>
+                    <li><img src="img/libreria.svg" alt=""><a href="#"> La tua libreria</a></li>
                 </ul>
                 <h3>Playlist</h3>
                 <ul>
@@ -31,8 +32,20 @@
                     <li><a href="@">Nome Playlist</a></li>
                     <li><a href="@">Nome Playlist</a></li>
                 </ul>
+
+                <div class="profile">
+                    <div class="download">
+                        <a href="#"><img src="img/download.svg" alt="download-app"></a>
+                        <a href="#"> Installa app</a>
+                    </div>
+                    <div class="user">
+                        <a href="#"><img src="img/profile.svg" alt="profile-user"></a>
+                        <a href="#"> John Doe</a>
+                    </div>
+                </div>
             </div>
             <main>
+                <!--HEADER-->
                 <header>
                     <a href="#">EFFETTUA L'UPGRADE</a>
                 </header>
@@ -189,7 +202,7 @@
                     <img src="img/sinister.jpeg" alt="sinister">
                     <div class="info-current-song">
                         <p class="clr-white">Sinister</p>
-                        <p class="clr-gray">Brano Nome</p>
+                        <a href="#" class="clr-gray"> Brano Nome</a>
                     </div>
                 </div>
 

@@ -9,7 +9,8 @@
 /* Generics */
 
 body{
-    font-family: sans-serif;
+    font-family: Montserrat, sans-serif;
+    font-weight: bold;
     background-color: #141922;
     color: #fff;
 }
@@ -25,7 +26,8 @@ footer{
 
 h2{
     margin-bottom: 20px;
-    margin-left: 20px;
+    margin-left: 10px;
+    font-size: 32px;
 }
 
 h3{
@@ -39,6 +41,7 @@ header{
     right: 20px;
     top: 0;
     left: 300px;
+    z-index: 1;
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -75,11 +78,15 @@ a{
 .clr-gray{
     color: #707377;
 }
+
+
 .top-content{
     height: calc(100vh - 100px);
     overflow: auto;
     
 }
+
+/*SIDEBAR*/
 
 .sidebar{
     width: 300px;
@@ -88,26 +95,11 @@ a{
     left: 0;
     top: 0;
     bottom: 100px;
+    padding: 25px;
 }
 
 .sidebar p{
     color: white;
-}
-
-.main-content{
- color: white;
- padding-top: 110px;
-}
-
-
-.name-current-song img{
-    width: 50px;
-}
-
-/*SIDEBAR*/
-
-.sidebar{
-    padding: 25px;
 }
 
 .logo-big{
@@ -121,7 +113,7 @@ a{
 }
 
 .sidebar ul img{
-    width: 10%;
+    width: 12%;
     display: inline-block;
 }
 
@@ -130,7 +122,52 @@ a{
 }
 
 .sidebar ul:first-of-type li{
-    line-height: 25px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.fa-plus{
+    color: #000;
+    font-weight: 900;
+    font-size: 22px;
+    padding: 8px;
+    background-color: #fff;
+}
+
+.download img{
+    width: 20px;
+}
+
+.download a{
+    color: #707377;
+    margin-bottom: 10px;
+}
+.download{
+    display: flex;
+    border-bottom: 1px solid #707377;
+    gap: 10px;
+}
+
+.user{
+    display: flex;
+    margin-top: 10px;
+    align-items: center;
+    gap: 10px;
+}
+
+.user img{
+    width: 30px;
+    background-color: #707377;
+    border-radius: 50%;
+}
+
+.user a{
+    color: #fff;
+}
+
+.profile{
+    margin-top: 150px;
 }
 
 /*HEADER*/
@@ -146,10 +183,25 @@ header a{
 
 /*MAIN CONTENT*/
 
+.main-content{
+    color: white;
+    padding-top: 110px;
+}
+
+.main-content p{
+    color: #707377;
+    margin-top: 10px;
+}
+
 .main-navbar{
     display: flex;
     justify-content: center;
-    margin: 20px 0;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.recently{
+    padding-right: 10px;
 }
 
 .main-navbar ul{
@@ -163,7 +215,7 @@ header a{
 }
 .col{
     flex-basis: calc(100% / 6);
-    padding: 0 20px;
+    padding: 0 10px;
 }
 
 .card-text{
@@ -171,12 +223,20 @@ header a{
     margin-top: 20px;
 }
 
+.card-text h4{
+    font-size: 20px;
+}
+
+.card-text p{
+    font-size: 14px;
+}
+
 .recently, .playlist-created, .popular-artist{
     margin-bottom: 50px;
 }
 
 .playlist-created > p, .popular-artist > p{
-    margin-left: 20px;
+    margin-left: 10px;
     margin-bottom: 40px;
 }
 
@@ -199,7 +259,9 @@ header a{
     width: 100vw;
 }
 
-
+.name-current-song img{
+    width: 50px;
+}
 
 .current-song{
     display: flex;
@@ -282,4 +344,44 @@ header a{
     align-items: center;
     gap: 15px;
  }
+
+
+ /*HOVER EFFECT*/
+
+ /*header hover*/
+header a:hover{
+    font-size: 18px;
+    padding: 15px 50px;
+    border-radius: 35px;
+}
+
+/*sidebar hover*/
+.sidebar a:hover{
+    color: #fff;
+}
+
+/*main hover*/
+
+.main-content li > a:hover{
+    color: #fff;
+}
+
+/*footer hover*/
+.info-current-song a:hover{
+    color: #fff;
+    text-decoration: underline;
+}
+
+.icon-controls .fa-circle-play:hover{
+    font-size: 38px;
+}
+
+.minutes-song .tot-minute:hover .current-minute{
+    border-color: yellowgreen;
+}
+
+.volume-song .tot-volume:hover .current-volume{
+    border-color: yellowgreen;
+}
+
 

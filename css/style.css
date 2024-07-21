@@ -25,6 +25,10 @@ header{
     right: 20px;
     top: 0;
     left: 300px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 10px;
 }
 main{
     margin-left: 310px;
@@ -72,7 +76,16 @@ main{
 .name-current-song img{
     width: 50px;
 }
-
+/*HEADER*/
+header a{
+    padding: 15px 40px;
+    color: white;
+    border: 1px solid white;
+    background-color: transparent;
+    border-radius: 25px;
+    text-decoration: none;
+    font-size: 14px;
+}
 
 /*footer*/
 .song-panel{
@@ -81,6 +94,8 @@ main{
     align-items: center;
     height: 100%;
     padding: 0 20px;
+    gap: 20px;
+    width: 100vw;
 }
 
 
@@ -136,7 +151,7 @@ main{
 
 
 .tot-minute{
-   width: 600px; 
+   width: 40vw; 
    height: 4px;
    border: 1px solid;
    background-color: #707377;

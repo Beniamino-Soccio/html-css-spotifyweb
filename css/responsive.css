@@ -131,6 +131,9 @@
     .homepage, .search, .library, .download, .user{
         justify-content: center;
     }
+    .side-selected{
+        display: none;
+    }
     /* !header*/
     header a{
         padding: 10px 25px;
@@ -189,3 +192,6 @@
         width: 15vw;
     }
 }
+
+/*media query bonus*/
+

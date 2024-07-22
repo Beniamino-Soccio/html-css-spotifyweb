@@ -73,12 +73,9 @@
     flex-direction: column;
     gap: 5px;
     }
-    .info-current-song a{
-        font-size: 13px;
-    }
     .name-current-song{
         gap: 10px;
-        margin-right: 30px;
+        margin-right: 25px;
     }
     .icons-current-song a{
         font-size: 14px;
@@ -104,5 +101,91 @@
     }
     .volume-song a{
         font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 550px){
+    /* !sidebar*/
+    .logo-big{
+        display: none;
+    }
+    .logo-sml{
+        display: block;
+        width: 40px;
+        margin: 10px 0 20px 5px;
+    }
+    .homepage a:last-child, .search a:last-child, .library a:last-child, h3, .down-list, .download a:last-child, .user a:last-child{
+        display: none;
+    }
+    .download{
+        border-style: none; 
+    }
+    .sidebar{
+        width: 60px;
+        padding: 5px;
+    }
+    .profile{
+        margin-top: 520px
+    }
+
+    .homepage, .search, .library, .download, .user{
+        justify-content: center;
+    }
+    /* !header*/
+    header a{
+        padding: 10px 25px;
+        border-radius: 25px;
+        font-size: 11px;
+    }
+    header a:hover{
+        font-size: 13px;
+        padding: 13px 28px;  
+    }
+    /* !main*/
+    main{
+        margin-left: 60px;   
+    }
+    .main-navbar a{
+        font-size: 12px;
+    }
+    h2{
+        font-size: 22px;
+        margin-bottom: 15px;
+    }
+    h4{
+        font-size: 15px;
+    }
+    .playlist-created > p, .popular-artist > p{
+        font-size: 12px;
+    }
+    /* !footer*/
+    .song-panel{
+        padding: 0 10px;
+        gap: 15px; 
+    }
+    .name-current-song img{
+        width: 40px;
+    }
+    .name-current-song{
+        margin-right: 5px;
+    }
+    .info-current-song a{
+        font-size: 11px;
+    }
+    .info-current-song p{
+        font-size: 12px;
+    }
+
+    .minutes-song p{
+        font-size: 11px;
+    }
+    .minutes-song{
+        gap: 10px;  
+    }
+    .tot-minute{
+        width: 20vw;   
+    }
+    .tot-volume{
+        width: 15vw;
     }
 }

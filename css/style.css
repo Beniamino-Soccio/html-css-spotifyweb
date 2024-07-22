@@ -37,19 +37,19 @@ h3{
 header{
     height: 100px;
     background-color: rgba(0, 0, 0, 0.5);
-    position: fixed;
-    right: 20px;
+    position: sticky;
+    right: 0;
     top: 0;
-    left: 300px;
+    left: 0;
     z-index: 1;
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    padding-right: 10px;
+    padding-right: 20px;
 }
 
 main{
-    margin-left: 310px;
+    margin-left: 300px;
     
 }
 
@@ -184,8 +184,7 @@ header a{
 /*MAIN CONTENT*/
 
 .main-content{
-    color: white;
-    padding-top: 110px;
+    padding: 0 10px;
 }
 
 .main-content p{
@@ -353,6 +352,7 @@ header a:hover{
     font-size: 18px;
     padding: 15px 50px;
     border-radius: 35px;
+    margin: -5px -5px;
 }
 
 /*sidebar hover*/
@@ -374,6 +374,7 @@ header a:hover{
 
 .icon-controls .fa-circle-play:hover{
     font-size: 38px;
+    margin: -2px -2px;
 }
 
 .minutes-song .tot-minute:hover .current-minute{

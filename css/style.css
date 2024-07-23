@@ -16,7 +16,7 @@ body{
 }
 
 img{
-    width: 100%;
+    max-width: 100%;
 }
 
 footer{
@@ -233,7 +233,9 @@ header a{
     flex-basis: calc(100% / 6);
     padding: 0 10px;
 }
-
+.card{
+    cursor: pointer;
+}
 .card-text{
     text-align: center;
     margin-top: 20px;
@@ -256,8 +258,24 @@ header a{
     border-radius: 50%;
 }
 
-.card-image{
+.card-image figure{
     position: relative;
+}
+
+figure .play{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.popular-artist .play{
+    border-radius: 50%;
 }
 
 /*footer*/
@@ -377,6 +395,10 @@ header a:hover{
 
 .main-content li > a:hover{
     color: #fff;
+}
+
+.card:hover .play{
+    display: flex;
 }
 
 /*footer hover*/

@@ -348,7 +348,7 @@ figure .play{
    height: 4px;
    border: 1px solid;
    background-color: #707377;
-   
+   cursor: pointer;
 }
 .current-minute{
     width: 20%;
@@ -362,7 +362,7 @@ figure .play{
     height: 4px;
     border: 1px solid;
     background-color: #707377;
-    
+    cursor: pointer;
 }
 .current-volume{
      width: 20%;

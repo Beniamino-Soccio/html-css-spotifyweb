@@ -180,7 +180,6 @@
     .info-current-song p{
         font-size: 12px;
     }
-
     .minutes-song p{
         font-size: 11px;
     }
@@ -192,6 +191,54 @@
     }
     .tot-volume{
         width: 15vw;
+    }
+}
+
+
+/*media query bonus*/
+
+@media screen and (max-width: 420px){
+    /*!main content*/
+    header{
+        height: 80px;
+    }
+    .col{
+        flex-basis: 100%;
+    }
+    /*!footer*/
+    .current-song{
+        display: none;
+    }
+    .controls-song{
+        margin-left: 20px;
+    }
+    .icon-controls{
+        gap: 35px;
+    }
+    .tot-minute{
+        width: 60vw;
+    }
+
+    .volume-song .fa-list-ul, .volume-song .fa-desktop{
+        display: none;
+    }
+
+    .volume-song{
+        flex-direction: column-reverse;
+        max-height: 80px;
+        margin-bottom: 0;
+        justify-content: center;
+    }
+    .tot-volume{
+        transform: rotate(270deg);
+        margin-top: 42px;
+        margin-left: 0;
+        margin-bottom: -11px;
+        width: 12vw;
+    }
+    .fa-volume-high{
+        margin-top: 32px;
+        margin-left: 0;
     }
 }
 

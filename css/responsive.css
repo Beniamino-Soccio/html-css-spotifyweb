@@ -89,6 +89,7 @@
     }
     .icon-controls .fa-circle-play {
         font-size: 30px;
+        margin: 2px 1px;
     }
     .tot-minute{
         width: 25vw;   
@@ -102,6 +103,7 @@
     .volume-song a{
         font-size: 14px;
     }
+    
 }
 
 @media screen and (max-width: 550px){
